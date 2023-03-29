@@ -1,0 +1,16 @@
+header.navbar {
+    background-color: #3A98B9;  
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
+header .navbar-brand{
+    font-family: 'Lemon', cursive;
+}
+.nav .nav-link.active {
+    background-color: #fff;
+    color: #3A98B9;
+}
