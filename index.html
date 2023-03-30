@@ -21,8 +21,8 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="./assets//css/global.css">
 
-    <!--Navbar CSS -->
-    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <!--Cabeçalho CSS -->
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
 
     <!-- Carousel CSS -->
     <link rel="stylesheet" href="./assets/css/carousel.css">
@@ -33,11 +33,17 @@
     <!-- Cursos css -->
     <link rel="stylesheet" href="./assets/css/cursos.css">
 
+    <!-- Produtos css -->
+    <link rel="stylesheet" href="./assets/css/produtos.css">
+
+    <!-- Contato CSS -->
+    <link rel="stylesheet" href="./assets/css/contato.css">
+
     <title>PlanetAzul</title>
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top">
+    <header class="navbar navbar-expand-lg sticky-top cabecalho">
         <div class="container">
             <h1 class="navbar-brand">PlanetAzul</h1>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu_navbar">
@@ -58,13 +64,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#produtos" class="nav-link">
                             <i class="bi bi-shop-window me-1"></i>
                             Nosso produtos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#contato" class="nav-link">
                             <i class="bi bi-chat-left-dots me-1"></i>
                             Fale conosco
                         </a>
@@ -81,7 +87,7 @@
             <section id="sobre" class="sobre">
 
                 <!-- Carousel -->
-                <div id="carouselPlanetAzul" class="carousel carousel-dark slide">
+                <div id="carouselPlanetAzul" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselPlanetAzul" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -91,7 +97,7 @@
                             aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="carousel-item active">
                             <img src="https://cdn.pixabay.com/photo/2016/11/19/10/30/beach-1838501_1280.jpg"
                                 class="d-block w-100" alt="Foto de uma mulher na praia com uma prancha de surf">
                             <div class="carousel-caption d-none d-md-block text-white">
@@ -101,7 +107,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="2000">
+                        <div class="carousel-item">
                             <img src="https://cdn.pixabay.com/photo/2016/11/29/02/19/animal-1866808_1280.jpg"
                                 class="d-block w-100" alt="Foto de uma tartaruga nadando">
                             <div class="carousel-caption d-none d-md-block text-white">
@@ -159,59 +165,454 @@
                             </p>
                         </div>
                     </div>
+                </div>
             </section>
 
             <!-- Cursos -->
             <section id="cursos" class="cursos">
                 <div class="container">
                     <h2 class="fs-2 pt-4 pb-4 text-center">Nossos <span>cursos</span></h2>
-                    <div class="row justify-content-between pb-4">
-                        <div class="card col-12 col-md-5 col-lg-3 pe-0 ps-0 mb-3">
-                            <img src="https://cdn.pixabay.com/photo/2014/06/27/08/49/dolphins-378217_1280.jpg"
-                                class="card-img-top w-100" alt="foto de golfinhos nadando">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="bi bi-journal-bookmark"></i> Biologia de
-                                    <span>cetáceos</span>
-                                </h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-                                    adipisci deleniti possimus ullam quaerat eveniet.</p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                    <div class="container-fluid">
+                        <div class="row justify-content-between pb-4">
+                            <div class="card col-12 col-md-5 col-lg-3 pe-0 ps-0 mb-3">
+                                <img src="https://cdn.pixabay.com/photo/2014/06/27/08/49/dolphins-378217_1280.jpg"
+                                    class="card-img-top w-100" alt="foto de golfinhos nadando">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-journal-bookmark"></i> Biologia de
+                                        <span>cetáceos</span>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                                        adipisci deleniti possimus ullam quaerat eveniet.</p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+    
+                            <div class="card col-12 col-md-5 col-lg-3 pe-0 ps-0 mb-3">
+                                <img src="https://cdn.pixabay.com/photo/2017/02/23/22/54/jellyfish-2093437_1280.jpg"
+                                    class="card-img-top w-100" alt="foto de golfinhos nadando">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-journal-bookmark"></i> Biologia de
+                                        <span>Cnidários</span>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                                        adipisci deleniti possimus ullam quaerat eveniet.</p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+    
+                            <div class="card col-12 col-md-5 col-lg-3 pe-0 ps-0 mb-3">
+                                <img src="https://cdn.pixabay.com/photo/2013/09/23/22/33/turtle-185484_1280.jpg"
+                                    class="card-img-top w-100" alt="foto de golfinhos nadando">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-journal-bookmark"></i> Biologia de
+                                        <span>Quelônios</span>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                                        adipisci deleniti possimus ullam quaerat eveniet.</p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card col-12 col-md-5 col-lg-3 pe-0 ps-0 mb-3">
-                            <img src="https://cdn.pixabay.com/photo/2017/02/23/22/54/jellyfish-2093437_1280.jpg"
-                                class="card-img-top w-100" alt="foto de golfinhos nadando">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="bi bi-journal-bookmark"></i> Biologia de
-                                    <span>Cnidários</span>
-                                </h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-                                    adipisci deleniti possimus ullam quaerat eveniet.</p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
-                            </div>
-                        </div>
-
-                        <div class="card col-12 col-md-5 col-lg-3 pe-0 ps-0 mb-3">
-                            <img src="https://cdn.pixabay.com/photo/2013/09/23/22/33/turtle-185484_1280.jpg"
-                                class="card-img-top w-100" alt="foto de golfinhos nadando">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="bi bi-journal-bookmark"></i> Biologia de
-                                    <span>Quelônios</span>
-                                </h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-                                    adipisci deleniti possimus ullam quaerat eveniet.</p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
 
             <!-- Produtos -->
-            <section id="produtos" class="produtos">
+            <section id="produtos" class="produtos pb-3">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="fs-2 pt-4 pb-4 text-center">
+                            Nossos <span>produtos</span>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#nadadeiras"
+                                    class="fw-bold text-start nav-link active">Nadadeiras</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#mascaras"
+                                    class="fw-bold text-start nav-link ">Mascaras de mergulho</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#neoprene"
+                                    class="fw-bold text-start nav-link ">Neoprene</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#surf"
+                                    class="fw-bold text-start nav-link ">Surf</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="nadadeiras">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2016/02/14/15/43/swimming-1199678_1280.jpg"
+                                                alt="foto de um par de nadadeiras">
+                                            <h5 class="produto-title fw-bold mt-2">Nadadeiras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2016/02/14/15/43/swimming-1199678_1280.jpg"
+                                                alt="foto de um par de nadadeiras">
+                                            <h5 class="produto-title fw-bold mt-2">Nadadeiras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2016/02/14/15/43/swimming-1199678_1280.jpg"
+                                                alt="foto de um par de nadadeiras">
+                                            <h5 class="produto-title fw-bold mt-2">Nadadeiras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2016/02/14/15/43/swimming-1199678_1280.jpg"
+                                                alt="foto de um par de nadadeiras">
+                                            <h5 class="produto-title fw-bold mt-2">Nadadeiras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2016/02/14/15/43/swimming-1199678_1280.jpg"
+                                                alt="foto de um par de nadadeiras">
+                                            <h5 class="produto-title fw-bold mt-2">Nadadeiras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2016/02/14/15/43/swimming-1199678_1280.jpg"
+                                                alt="foto de um par de nadadeiras">
+                                            <h5 class="produto-title fw-bold mt-2">Nadadeiras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2016/02/14/15/43/swimming-1199678_1280.jpg"
+                                                alt="foto de um par de nadadeiras">
+                                            <h5 class="produto-title fw-bold mt-2">Nadadeiras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2016/02/14/15/43/swimming-1199678_1280.jpg"
+                                                alt="foto de um par de nadadeiras">
+                                            <h5 class="produto-title fw-bold mt-2">Nadadeiras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="mascaras">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2015/04/11/09/53/sea-717487_1280.jpg"
+                                                alt="foto de uma mascara de mergulho nas pedras de uma praia">
+                                            <h5 class="produto-title fw-bold mt-2">Mascaras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2015/04/11/09/53/sea-717487_1280.jpg"
+                                                alt="foto de uma mascara de mergulho nas pedras de uma praia">
+                                            <h5 class="produto-title fw-bold mt-2">Mascaras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2015/04/11/09/53/sea-717487_1280.jpg"
+                                                alt="foto de uma mascara de mergulho nas pedras de uma praia">
+                                            <h5 class="produto-title fw-bold mt-2">Mascaras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2015/04/11/09/53/sea-717487_1280.jpg"
+                                                alt="foto de uma mascara de mergulho nas pedras de uma praia">
+                                            <h5 class="produto-title fw-bold mt-2">Mascaras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2015/04/11/09/53/sea-717487_1280.jpg"
+                                                alt="foto de uma mascara de mergulho nas pedras de uma praia">
+                                            <h5 class="produto-title fw-bold mt-2">Mascaras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2015/04/11/09/53/sea-717487_1280.jpg"
+                                                alt="foto de uma mascara de mergulho nas pedras de uma praia">
+                                            <h5 class="produto-title fw-bold mt-2">Mascaras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2015/04/11/09/53/sea-717487_1280.jpg"
+                                                alt="foto de uma mascara de mergulho nas pedras de uma praia">
+                                            <h5 class="produto-title fw-bold mt-2">Mascaras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://cdn.pixabay.com/photo/2015/04/11/09/53/sea-717487_1280.jpg"
+                                                alt="foto de uma mascara de mergulho nas pedras de uma praia">
+                                            <h5 class="produto-title fw-bold mt-2">Mascaras</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="neoprene">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/1331174333/pt/foto/neoprene-wetsuit.jpg?s=612x612&w=is&k=20&c=hXYmP2hqEx1KVZjCMT4AvSAFFt6nanWHDHxzAaCUhGk="
+                                                alt="foto de uma roupa de neoprene">
+                                            <h5 class="produto-title fw-bold mt-2">Roupa de Neoprene</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/1331174333/pt/foto/neoprene-wetsuit.jpg?s=612x612&w=is&k=20&c=hXYmP2hqEx1KVZjCMT4AvSAFFt6nanWHDHxzAaCUhGk="
+                                                alt="foto de uma roupa de neoprene">
+                                            <h5 class="produto-title fw-bold mt-2">Roupa de Neoprene</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/1331174333/pt/foto/neoprene-wetsuit.jpg?s=612x612&w=is&k=20&c=hXYmP2hqEx1KVZjCMT4AvSAFFt6nanWHDHxzAaCUhGk="
+                                                alt="foto de uma roupa de neoprene">
+                                            <h5 class="produto-title fw-bold mt-2">Roupa de Neoprene</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/1331174333/pt/foto/neoprene-wetsuit.jpg?s=612x612&w=is&k=20&c=hXYmP2hqEx1KVZjCMT4AvSAFFt6nanWHDHxzAaCUhGk="
+                                                alt="foto de uma roupa de neoprene">
+                                            <h5 class="produto-title fw-bold mt-2">Roupa de Neoprene</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/1331174333/pt/foto/neoprene-wetsuit.jpg?s=612x612&w=is&k=20&c=hXYmP2hqEx1KVZjCMT4AvSAFFt6nanWHDHxzAaCUhGk="
+                                                alt="foto de uma roupa de neoprene">
+                                            <h5 class="produto-title fw-bold mt-2">Roupa de Neoprene</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/1331174333/pt/foto/neoprene-wetsuit.jpg?s=612x612&w=is&k=20&c=hXYmP2hqEx1KVZjCMT4AvSAFFt6nanWHDHxzAaCUhGk="
+                                                alt="foto de uma roupa de neoprene">
+                                            <h5 class="produto-title fw-bold mt-2">Roupa de Neoprene</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/1331174333/pt/foto/neoprene-wetsuit.jpg?s=612x612&w=is&k=20&c=hXYmP2hqEx1KVZjCMT4AvSAFFt6nanWHDHxzAaCUhGk="
+                                                alt="foto de uma roupa de neoprene">
+                                            <h5 class="produto-title fw-bold mt-2">Roupa de Neoprene</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/1331174333/pt/foto/neoprene-wetsuit.jpg?s=612x612&w=is&k=20&c=hXYmP2hqEx1KVZjCMT4AvSAFFt6nanWHDHxzAaCUhGk="
+                                                alt="foto de uma roupa de neoprene">
+                                            <h5 class="produto-title fw-bold mt-2">Roupa de Neoprene</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="surf">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/479928254/pt/foto/prancha-de-surf.jpg?s=612x612&w=is&k=20&c=RnAXn5ypueNPRapL-0bXUU1IO_G5B8OxmH8bInp0Py4="
+                                                alt="ffoto de um prancha de surf">
+                                            <h5 class="produto-title fw-bold mt-2">Pranchas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/479928254/pt/foto/prancha-de-surf.jpg?s=612x612&w=is&k=20&c=RnAXn5ypueNPRapL-0bXUU1IO_G5B8OxmH8bInp0Py4="
+                                                alt="ffoto de um prancha de surf">
+                                            <h5 class="produto-title fw-bold mt-2">Pranchas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/479928254/pt/foto/prancha-de-surf.jpg?s=612x612&w=is&k=20&c=RnAXn5ypueNPRapL-0bXUU1IO_G5B8OxmH8bInp0Py4="
+                                                alt="ffoto de um prancha de surf">
+                                            <h5 class="produto-title fw-bold mt-2">Pranchas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/479928254/pt/foto/prancha-de-surf.jpg?s=612x612&w=is&k=20&c=RnAXn5ypueNPRapL-0bXUU1IO_G5B8OxmH8bInp0Py4="
+                                                alt="ffoto de um prancha de surf">
+                                            <h5 class="produto-title fw-bold mt-2">Pranchas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/479928254/pt/foto/prancha-de-surf.jpg?s=612x612&w=is&k=20&c=RnAXn5ypueNPRapL-0bXUU1IO_G5B8OxmH8bInp0Py4="
+                                                alt="ffoto de um prancha de surf">
+                                            <h5 class="produto-title fw-bold mt-2">Pranchas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/479928254/pt/foto/prancha-de-surf.jpg?s=612x612&w=is&k=20&c=RnAXn5ypueNPRapL-0bXUU1IO_G5B8OxmH8bInp0Py4="
+                                                alt="ffoto de um prancha de surf">
+                                            <h5 class="produto-title fw-bold mt-2">Pranchas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/479928254/pt/foto/prancha-de-surf.jpg?s=612x612&w=is&k=20&c=RnAXn5ypueNPRapL-0bXUU1IO_G5B8OxmH8bInp0Py4="
+                                                alt="ffoto de um prancha de surf">
+                                            <h5 class="produto-title fw-bold mt-2">Pranchas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="https://media.istockphoto.com/id/479928254/pt/foto/prancha-de-surf.jpg?s=612x612&w=is&k=20&c=RnAXn5ypueNPRapL-0bXUU1IO_G5B8OxmH8bInp0Py4="
+                                                alt="ffoto de um prancha de surf">
+                                            <h5 class="produto-title fw-bold mt-2">Pranchas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="contato pb-4" id="contato">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="fs-2 pt-4 pb-4 text-center">
+                            Fale <span>conosco</span>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 mb-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold ">Seu nome</label>
+                                    <input type="text" id="nome" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold">Seu telefono</label>
+                                    <input type="tel" id="telefone" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold">Sua mensagem</label>
+                                    <textarea id="mensagem" class="form-control" required></textarea>
+                                </div>
+                                <button type="submit" class="btn">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row mb-5">
+                                <h3 class="fs-4">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais</h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-3 me-3">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="fs-4">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço</h3>
+                                <address>
+                                    Rua Teste nº 123, Rio das Ostras - RJ
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 

@@ -2,19 +2,43 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Cor de fundo das seções */
 .sobre,
 .produtos {
     background-color: #FFF1DC;
 }
 
+.cursos,
+.contato {
+    background-color: #E8D5C4;
+}
+
+/* Formatação dos subtítulos */
 .sobre h2,
 .cursos h2,
-.cursos h5 {
+.cursos h5,
+.produtos h2, 
+.contato h2,
+.contato h3.fs-4 {
     font-family: 'Lemon', cursive;
 }
 .sobre span,
 .cursos h2 span,
 .cursos h5 span,
-.cursos .bi-journal-bookmark {
+.produtos h2 span,
+.contato h2 span,
+.contato h3.fs-4,
+.cursos .bi-journal-bookmark,
+.contato .form-label,
+.bi-facebook,
+.bi-instagram,
+.bi-whatsapp {
     color: #3A98B9;
+}
+
+/* Botões */
+.produtos .nav-link.active,
+.contato button {
+    background-color: #3A98B9;
+    color: #fff;
 }

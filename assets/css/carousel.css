@@ -16,7 +16,7 @@
 @media screen and (min-width: 1024px){
 
     .carousel-item img{
-        max-height: 685px;
+        max-height: 585px;
         object-fit: cover;
     
     }
@@ -24,7 +24,7 @@
 @media screen and (min-width: 1440px){
 
     .carousel-item img{
-        max-height: 600px;
+        max-height: 550px;
         object-fit: cover;
     
     }

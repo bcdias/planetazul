@@ -2,7 +2,7 @@ header.navbar {
     background-color: #3A98B9;  
 }
 
-.nav .nav-link,
+.cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover {
     color: #fff;
@@ -10,7 +10,7 @@ header.navbar {
 header .navbar-brand{
     font-family: 'Lemon', cursive;
 }
-.nav .nav-link.active {
+.cabecalho .nav .nav-link.active {
     background-color: #fff;
     color: #3A98B9;
 }
