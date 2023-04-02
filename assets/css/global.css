@@ -3,8 +3,7 @@ body{
 }
 
 /* Cor de fundo das seções */
-.sobre,
-.produtos {
+.bg-color-primary{
     background-color: #FFF1DC;
 }
 
@@ -14,31 +13,17 @@ body{
 }
 
 /* Formatação dos subtítulos */
-.sobre h2,
-.cursos h2,
-.cursos h5,
-.produtos h2, 
-.contato h2,
-.contato h3.fs-4 {
+.ff-lemon{
     font-family: 'Lemon', cursive;
 }
-.sobre span,
-.cursos h2 span,
-.cursos h5 span,
-.produtos h2 span,
-.contato h2 span,
-.contato h3.fs-4,
-.cursos .bi-journal-bookmark,
-.contato .form-label,
-.bi-facebook,
-.bi-instagram,
-.bi-whatsapp {
+
+.text-colored{
     color: #3A98B9;
 }
 
 /* Botões */
-.produtos .nav-link.active,
-.contato button {
+.blue-button,
+.produtos .nav-link.active {
     background-color: #3A98B9;
     color: #fff;
 }
